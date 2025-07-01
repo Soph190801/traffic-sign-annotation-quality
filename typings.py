@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from typing import List
-from typing import Literal, Dict, Union, TypedDict, Optional
+from typing import Literal, Dict, Union, Optional
 
 Severity = Literal["error", "warning"]
 

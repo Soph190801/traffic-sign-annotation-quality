@@ -1,6 +1,5 @@
 from typings import AttributeConditionConfig, ErrorsContext 
 from typing import List
-from typing import Optional
 
 def attributesConditionCheck(
         annotations: List[dict], 

@@ -1,5 +1,4 @@
 import csv
-import scaleapi
 from errorGenerator import ErrorGenerator
 from typing import List
 from typings import ErrorsContext, Severity
@@ -30,8 +29,8 @@ def write_results_to_csv(results: dict, output_file: str):
 
 if __name__ == "__main__":
     runner = ErrorGenerator(
-        mode="multiple",
-        filters={"project_name": "Traffic Sign Detection", "status": scaleapi.TaskStatus.Completed}
+        mode="single",
+        task_id="5f127f5f3a6b100017232099"
     )
 
     results = runner.getErrorsByTask()
