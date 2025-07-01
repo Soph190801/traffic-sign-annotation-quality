@@ -10,7 +10,7 @@ This project implements a configurable quality-checking framework that programma
 
 ## Features
 
-### 🔍 Truncation Check
+### Truncation Check
 
 Compares truncation attribute values against the bounding box’s proximity to the image edges. See the `TruncationConfig` class in `typings.py` for configurable options.
 
@@ -50,6 +50,11 @@ errorContext = ErrorsContext(
 functionCall(annotations, configName, errors, errorContext)  # Always pass `errors` to collect issues
 ```
 
+### 2. Run the Checks
+    - In `main.py`, initialize the error generator and run the checks.
+    - Single Task Mode – Pass a `task_id`
+    - Multiple Task Mode – Provide `filters` like project name and status
+
 ## Check the Output
 
 Results are stored in:
@@ -73,6 +78,6 @@ The verdict is based on whether any errors were found, with messages and severit
 ## Installation
 
 Clone the repository and install dependencies:
-`git clone https://github.com/your-username/project-name.git`
-`cd project-name`
+`gh repo clone Soph190801/traffic-sign-annotation-quality`
+`cd traffic-sign-annotation-quality`
 `pip install -r requirements.txt`
